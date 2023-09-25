@@ -1,0 +1,32 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{tittle}}</title>
+    {% tailwind_css %}
+    {% load static %}
+</head>
+<body class="bg-gradient-to-t from-[#515d7b] to-[#000000] bg-no-repeat">
+    
+<div>
+    <nav class="lg:py-10 text-white py-4 lg:mt-0 md:mt-0 md:ml-[50%] sm:ml-[30%] ml-[10%]  text-lg lg:mr-14 md:text-right scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-white scrollbar-corner-white  lg:text-right z-50 fixed">
+        <ul class="">
+            
+            <il class="mx-4 " >
+             <a href="/" class="hover:text-gray-300  hover:text-lg duration-500 font-mono font-semibold  lg:text-3xl lg:hover:text-4xl ">HOME</a> 
+            </il>
+            <il class="mx-4">
+                <a href="/post/" class="hover:text-gray-300  hover:text-lg duration-500 font-mono font-semibold  lg:text-3xl lg:hover:text-4xl">POST</a> 
+            </il>
+            <il class="mx-4">
+                <a href="/chat/" class="hover:text-gray-300  hover:text-lg duration-500 font-mono font-semibold  lg:text-3xl lg:hover:text-4xl">CHAT</a>
+            </il>
+            <il class="mx-4">
+                <a href="/contact/" class="hover:text-gray-300  hover:text-lg duration-500 font-mono font-semibold  lg:text-3xl lg:hover:text-4xl ">CONTACT</a>
+            </il>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,23 @@
+{% load static tailwind_tags %}
+{% include 'header.html' %}
+{% tailwind_css %}
+
+  <div>
+    <div class="text-white py-16">
+        
+         <div class=" mx-auto text-center justify-items-center w-[70%] overflow-hidden p-8 mt-24  border-4 border-gray-500 border-opacity-50  rounded-3xl">
+            <h2 class="text-4xl text-left ">{{pdid.tittle|title}}</h2>
+            <br>
+            <img src="{{pdid.pic.url}}" class="w-auto">
+            
+            <span class="italic text-xs text-gray-100 text-left relative ml-[54rem] bg-zinc-600">{{pdid.created}}</span>
+            <br>
+            <p class=" opacity-80 font-serif break-words ">{{pdid.body }}</p>
+            
+         </div>
+
+     
+    </div>
+  </div>  
+</body>
+</html>

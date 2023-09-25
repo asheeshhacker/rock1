@@ -1,0 +1,20 @@
+{% include "header.html" %}
+<div>
+    <div class="text-white py-16">
+        {% for i in postdb %}
+         <div class=" mx-auto   w-[70%] overflow-hidden p-8 mt-24  border-4 border-gray-500 border-opacity-50  rounded-3xl ">
+            <a href="/fullpost/{{i.slug}}" class="text-xl md:text-2xl lg:text-4xl text-left mb-14">{{i.tittle|title}}</a>
+            <br><br>
+            <img src="{{i.pic.url}}" class="w-auto">{{i.pic.url}}
+            
+            <span class="italic text-xs text-gray-100 text-left relative ml-[54rem] bg-zinc-600">{{i.created}}</span>
+            <br>
+            <p class=" opacity-80 font-serif ">{{i.body|truncatechars:256 }}</p>
+            
+         </div>
+
+        {% endfor %}
+    </div>
+  </div>  
+</body>
+</html>

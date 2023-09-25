@@ -1,0 +1,41 @@
+{% load static tailwind_tags %}
+{% include 'header.html' %}
+{% tailwind_css %}
+
+<div>
+    <h1 class="text-center font-mono font-semibold text-white pt-16 text-2xl">CONTACT ME</h1>
+    <div class="lg:grid lg:grid-cols-2 mb-48 mt-7">
+
+       
+
+        <div>
+            <h1 class="font-mono  text-2xl font-semibold text-white  pt-5 lg:text-center sm:text-center text-center  ">Lets talk about everything!</h1>
+             
+            <div class="mt-5 py-10 ">
+               <p class="text-white font-mono sm:text-center text-center font-bold">contact me :<a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=GTvVlcSHwQkFLSTFTMntnxfVlLTjMkgrNjCWJrWftKGcQLNsVCZfXLqkRVMdPpVmqbtmstwhVmVKg" class="italic font-mono  text-white  relative lg:right-0 hover:text-green-300  ">asheeshanuroop@gmail.com</a></p>
+  
+               
+
+        </div>
+       
+    </div>
+    <div class="  text-center flex mx-auto justify-center lg:w-[80%]">
+        <form method="post" action="{% url "contactform" %}>
+
+        <input type="text" value="name" name="name" class="rounded-full bg-transparent gray-600 italic w-[70%] ">
+        <input type="text" value="name" name="name" class=" rounded-full bg-transparent bg-gray-600 italic my-8 md:w-[65%] w-[80%] "><br>
+        <input type="text" value="mail" name="mail" class="rounded-full bg-transparent bg-gray-600 italic mb-6 md:w-[65%] w-[80%]"><br>
+        <textarea type="text" value="comment" name="cmt" class="rounded-sm bg-transparent bg-gray-600 italic py-9 md:w-[65%] w-[80%]  ">comment</textarea>
+        <br>
+        <button type="submit" class="bg-blue-900 hover:bg-bule-700 rounded-md px-6 py-3 hover:bg-blue-700 hover:-translate-y-1 duration-500 mb-10">submit</button>
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+</div>
